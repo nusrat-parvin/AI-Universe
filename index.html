@@ -12,17 +12,45 @@
     <header>
         <h1 class="text-5xl text-center text-bold my-5">AI Universe Hub</h1>
     </header>
+    <button class="btn btn-error text-white">Sort by Date</button>
 
     <main>
+        <!-- card container -->
         <section>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mx-auto w-9/12" id="container">
                 
 
             </div>
         </section>
+
+        <section>
+            <!-- modal section -->
+            <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+            <div id="modal-container">
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <button class="btn btn-error btn-sm btn-circle absolute right-2 top-2">✕</button>
+                        <h3 class="font-bold text-lg">Hello!</h3>
+                        <p class="py-4">Press ESC key or click on ✕ button to close</p>
+
+                        <!-- div for modal card -->
+                        <div id="modal-card">
+                            
+                    </div>
+                    </form>
+                    </dialog>
+            </div>
+        </section>
+
+<!-- show all elements button -->
+        <div id="show-all" class="text-center my-5 hidden">
+            <button id="btn-show" class="btn btn-primary">Show All</button>
+        </div>
     </main>
 
     <!-- script -->
     <script src="index.js"></script>
+
+    
 </body>
 </html>
